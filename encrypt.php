@@ -38,7 +38,7 @@ function decrypt_base64_layers($str,$number){
 
 function decrypt_bin_hex_layers($str,$number){
    for($i=0;  $i<$number; $i++){
-      $str = base64_decode($str);
+      $str = hex2bin($str);
       
          if ($i == $number-1){
             print $str."<br>";
